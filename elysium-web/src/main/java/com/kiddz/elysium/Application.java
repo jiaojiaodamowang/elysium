@@ -1,4 +1,4 @@
-package com.kiddz.elysium.application;
+package com.kiddz.elysium;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

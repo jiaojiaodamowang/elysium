@@ -1,4 +1,4 @@
-package com.kiddz.elysium.tutorial;
+package com.kiddz.elysium.core.tutorial.juc;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;

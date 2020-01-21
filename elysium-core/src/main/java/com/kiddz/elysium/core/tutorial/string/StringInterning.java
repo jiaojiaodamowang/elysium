@@ -1,4 +1,4 @@
-package com.kiddz.elysium.tutorial;
+package com.kiddz.elysium.core.tutorial.string;
 
 public class StringInterning {
 
