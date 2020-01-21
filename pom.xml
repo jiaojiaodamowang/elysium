@@ -10,17 +10,18 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.kiddz.elysium</groupId>
-    <artifactId>elysium-parent</artifactId>
+    <artifactId>elysium</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>elysium-parent</name>
+    <name>elysium</name>
     <description>Demo project for Spring Boot</description>
 
     <modules>
-        <module>elysium-application</module>
-        <module>elysium-core</module>
         <module>elysium-api</module>
+        <module>elysium-core</module>
         <module>elysium-common</module>
+        <module>elysium-dao</module>
         <module>elysium-service</module>
+        <module>elysium-web</module>
     </modules>
 
     <properties>

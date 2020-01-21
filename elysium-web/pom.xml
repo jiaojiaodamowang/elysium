@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.kiddz.elysium</groupId>
-        <artifactId>elysium-parent</artifactId>
+        <artifactId>elysium</artifactId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <artifactId>elysium-application</artifactId>
+    <artifactId>elysium-web</artifactId>
 
 
 </project>
