@@ -1,6 +1,7 @@
 package com.kiddz.elysium.web.controller;
 
 import com.kiddz.elysium.api.HelloService;
+import com.kiddz.elysium.web.response.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -21,8 +22,13 @@ public class HelloWorldController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     @ResponseBody
-    public String sayHello() {
-        return helloService.sayHello();
+    public Result sayHello() {
+        try {
+            String result = helloService.sayHello();
+            return Result.success(result);
+        } catch (Exception e) {
+            return Result.error(e.getMessage());
+        }
     }
 
     @RequestMapping(value = "/currenttime", method = RequestMethod.GET)
