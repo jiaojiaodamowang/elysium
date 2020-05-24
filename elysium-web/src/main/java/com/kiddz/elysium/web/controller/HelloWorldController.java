@@ -2,6 +2,7 @@ package com.kiddz.elysium.web.controller;
 
 import com.kiddz.elysium.api.HelloService;
 import com.kiddz.elysium.web.response.Result;
+import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -13,9 +14,8 @@ import javax.annotation.Resource;
 import java.util.Date;
 
 @Controller
+@Slf4j
 public class HelloWorldController {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(HelloWorldController.class);
 
     @Resource
     private HelloService helloService;
