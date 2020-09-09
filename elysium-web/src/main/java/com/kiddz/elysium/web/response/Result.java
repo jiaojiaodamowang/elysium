@@ -42,4 +42,8 @@ public class Result<T> implements Serializable {
     public static Result error(String message) {
         return new Result(Status.ERROR, message);
     }
+
+    public static Result other(Status status, String message) {
+        return new Result(status, message);
+    }
 }
