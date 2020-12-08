@@ -1,5 +1,7 @@
 package com.kiddz.elysium.core.leetcode.medium;
 
+import com.sun.scenario.effect.impl.sw.java.JSWColorAdjustPeer;
+
 import java.util.Arrays;
 
 /**
@@ -46,17 +48,14 @@ public class SortColors {
     }
 
     private static void sortColors(int[] nums) {
-        int left = -1;
-        int right = nums.length - 1;
+        int redBound = -1;
+        int blueBound = nums.length;
         int i = 0;
-        while (i <= right) {
+        while (i < blueBound) {
             if (nums[i] == 0) {
-                left++;
-                swap(nums, i, left);
-                i++;
+                swap(nums, i++, ++redBound);
             } else if (nums[i] == 2) {
-                swap(nums, i, right);
-                right--;
+                swap(nums, i , --blueBound);
             } else {
                 i++;
             }
